@@ -1,0 +1,200 @@
+
+###
+GET http://localhost:6451/discount
+
+
+###
+POST http://localhost:6451/products
+Content-Type: application/json
+
+{
+    "pname":"Regular Blazer" ,
+    "photo": "/Blazer.png",
+    "StandardPrice": "500",
+}
+
+###
+PATCH http://localhost:6451/deliveryprice/6635ca9d4252a86b83f26381
+Content-Type: application/json
+
+{
+    "price": "56$",
+    "days": "13 Days"
+}
+
+# Orderlist POST
+# "address": "ahbbcjbcb bdicb sb cuskks csiuhbscb sciuuhs",
+#    "country": "India",
+#    "email": "abcdef@gmail.com",
+#    "fullName": "hari",
+#    "phone": "919999999999",
+#    "state": "Karnataka",
+#    "zipCode": "505050",
+#    "orderStatus": "Order Placed",
+#    "orderdata": 
+#         "Back_Jacket_length": "6",
+#         "Back_Width": "5",
+#         "BreastStyle": "double Breast",
+#         "ButtonStyle": "two button",
+#         "Chest_Circumference": "4",
+#         "Front_Jacket_length": "7",
+#         "Head_Circumference": "2",
+#         "Height": "1",
+#         "Hip_Circumference": "10",
+#         "Inside_Length": "12",
+#         "Message": "hello",
+#         "Neck_Circumference": "3",
+#         "ShoulderType": "Regular Shoulder",
+#         "Sleeve_length": "8",
+#         "Trouser_Length": "11",
+#         "Type": "Suit (2piece)",
+#         "VentStyle": "Single Vent",
+#         "Waist_Circumference": "9",
+#         "bodyType": "Square Chest",
+#         "dataType": "Suit",
+#         "event": "Custome Fit",
+#         "fabric": "5A000-02",
+#         "lapelStyle": "Peak Lapel",
+#         "trousePleat": "One Pleat",
+#         "trouserBuckle": "Side Buckle",
+#         "trouserLoop": "With Loops",
+#         "trouserPocket": "Straight Pocket"
+#     
+# userlist POST
+#    "fullName": "virat",
+#      "email": "vwx@gmail.com",
+#      "phone": "+91 9999999991",
+#      "address": "kjdsbvkjbh jh kbvd sd",
+#      "country": "India",
+#      "state": "Delhi",
+#      "zipCode": "505050"  
+
+# cartlist POST
+# "Back_Jacket_length": "6",
+#     "Back_Width": "5",
+#     "BreastStyle": "double Breast",
+#     "ButtonStyle": "two button",
+#     "Chest_Circumference": "4",
+#     "Front_Jacket_length": "7",
+#     "Head_Circumference": "2",
+#     "Height": "1",
+#     "Hip_Circumference": "10",
+#     "Inside_Length": "12",
+#     "Message": "hello",
+#     "Neck_Circumference": "3",
+#     "ShoulderType": "Regular Shoulder",
+#     "Sleeve_length": "8",
+#     "Trouser_Length": "11",
+#     "Type": "Suit (2piece)",
+#     "VentStyle": "Single Vent",
+#     "Waist_Circumference": "9",
+#     "bodyType": "Square Chest",
+#     "dataType": "Suit",
+#     "event": "Custome Fit",
+#     "fabric": "5A000-02",
+#     "lapelStyle": "Peak Lapel",
+#     "trousePleat": "One Pleat",
+#     "trouserBuckle": "Side Buckle",
+#     "trouserLoop": "With Loops",
+#     "trouserPocket": "Straight Pocket"
+
+//http://localhost:6451/deliveryprice
+
+    {
+        "deliveryType": "Standard Delivery",
+        "price": "$ 85",
+        "handlingFee": "$ 8.55", 
+        "tax": "$ 24.23",
+        "days": "22 Days"
+    }
+
+    # "deliveryType": "Express Delivery",
+    # "price": "$ 56",
+    # "handlingFee": "$ 7.68", 
+    # "tax": "$ 21.76",
+    # "days": "13 Days"
+
+
+//http://localhost:6451/products
+
+# "pname":"Suit (3piece)",
+# "photo":"/Suit3pcs.jpg",
+# "priceXS":"$ 627",
+# "priceS":"$ 627",
+# "priceM":"$ 780",
+# "priceL":"$ 857",
+# "priceXL":"$ 946",
+# "priceXXL":"$ 946"
+
+# "pname":"Suit (2piece)",
+# "photo":"/Suit2pcs.jpg",
+# "priceXS":"$ 499",
+# "priceS":"$ 499",
+# "priceM":"$ 627",
+# "priceL":"$ 691",
+# "priceXL":"$ 754",
+# "priceXXL":"$ 754"
+
+# "pname":"Tuxedo (3piece)",
+# "photo":"/tuxedo3pcs.jpg",
+# "priceXS":"$ 627",
+# "priceS":"$ 627",
+# "priceM":"$ 780",
+# "priceL":"$ 857",
+# "priceXL":"$ 946",
+# "priceXXL":"$ 946"
+
+# "pname":"Tuxedo (2piece)",
+# "photo":"/Tuxedo2pcs.jpg",
+# "priceXS":"$ 499",
+# "priceS":"$ 499",
+# "priceM":"$ 627",
+# "priceL":"$ 691",
+# "priceXL":"$ 754",
+# "priceXXL":"$ 754"
+
+# "pname":"Regular Blazer",
+# "photo":"/Blazer.png",
+# "priceXS":"$ 307",
+# "priceS":"$ 307",
+# "priceM":"$ 397",
+# "priceL":"$ 435",
+# "priceXL":"$ 473",
+# "priceXXL":"$ 473"
+
+# "pname":"Tuxedo Blazer",
+# "photo":"/TuxBlazer.png",
+# "priceXS":"$ 307",
+# "priceS":"$ 307",
+# "priceM":"$ 397",
+# "priceL":"$ 435",
+# "priceXL":"$ 473",
+# "priceXXL":"$ 473"
+
+# "pname":"Trouser",
+# "photo":"/Trouser.jpg",
+# "priceXS":"$ 192",
+# "priceS":"$ 192",
+# "priceM":"$ 230",
+# "priceL":"$ 256",
+# "priceXL":"$ 281",
+# "priceXXL":"$ 281"
+
+# "pname":"Waist Coat",
+# "photo":"/waistcoat.jpg",
+# "priceXS":"$ 128",
+# "priceS":"$ 128",
+# "priceM":"$ 153",
+# "priceL":"$ 166",
+# "priceXL":"$ 192",
+# "priceXXL":"$ 192"
+
+{
+    "discountName": "2-Piece Discount",
+    "discountPrice": "-7%"
+}
+
+# {
+#     "discountName": "3-Piece Discount",
+#     "discountPrice": "-10%"
+# }
