@@ -58,7 +58,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'bespoke', 'dist', 'index.html'));
 });
 
-const PORT = process.env.PORT || 6451;
-app.listen(PORT, () => {
-  console.log("Server is running at port: ", PORT);
+// const PORT = process.env.PORT || 6451;
+app.listen(7000, () => {
+  console.log("Server is running at port: ");
 });
