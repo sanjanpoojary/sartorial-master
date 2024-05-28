@@ -6,4 +6,5 @@ module.exports = {
   JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
   stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
   stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+  port:process.env.PORT
 };

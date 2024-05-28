@@ -1,6 +1,7 @@
 node_modules
 bespoke/dist
 bespoke/node_modules
+.env
 # bespoke/.env.development
 # bespoke/.env.production
 # config/devKeys.js

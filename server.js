@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-// dotenv.config();
+ dotenv.config();
 const keys = require('./config/keys');
 
 // const multer = require("multer");
@@ -59,6 +59,7 @@ app.get('*', (req, res) => {
 });
 
 // const PORT = process.env.PORT || 6451;
-app.listen(7000, () => {
-  console.log("Server is running at port: ");
+app.listen(keys.port, () => {
+  console.log("Server is running at port: ",keys.port);
+
 });
