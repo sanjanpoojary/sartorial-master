@@ -4,7 +4,9 @@ services:
     env: node
     plan: free
     buildCommand: 'npm install'
-    startCommand: 'node server.js'
+    startCommand: 'node --max-old-space-size=1024 server.js'
     envVars:
+      - key: PORT
+        value: 8000
       - key: MONGO_URI
         value: mongodb+srv://sartor:RkfESDHALVWw7ZNQ@fabstore.l8ispzm.mongodb.net/sartorial?retryWrites=true&w=majority&appName=FabStore
