@@ -3,7 +3,7 @@ services:
     name: sartorial-master
     env: node
     plan: free
-    buildCommand: 'npm install'
+    buildCommand: 'npm run client-build'
     startCommand: 'node --max-old-space-size=1024 server.js'
     envVars:
       - key: PORT
