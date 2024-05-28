@@ -8,7 +8,7 @@
     "client-build": "cd bespoke && npm install && npm run build",
     "server": "npm run client-build && npm install && nodemon server.js",
     "dev": "nodemon server.js",
-    "start": "PORT=$PORT npm run client-build && nodemon server.js"
+    "start": "node --max-old-space-size=1024 server.js"
   },
   "keywords": [],
   "author": "",
