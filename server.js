@@ -59,7 +59,8 @@ app.get('*', (req, res) => {
 });
 
 // const PORT = process.env.PORT || 6451;
-app.listen(keys.port, () => {
-  console.log("Server is running at port: ",keys.port);
+const PORT =keys.port || 8000
+app.listen(PORT, () => {
+  console.log("Server is running at port: ",PORT);
 
 });
